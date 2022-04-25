@@ -126,8 +126,23 @@ body {
   color: var(--primary-white-color);
 }
 
+.mail-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .contacts-header {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -218,6 +233,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+}
+
+.vision-item {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px 25px 100px;
+  object-fit: contain;
+  margin-bottom: 30px;
+  background-color: var(--secondary-section-color);
+}
+
+.vision-icon {
+  max-width: 70px;
+  max-height: 70px;
+  padding: 0;
 }
 
 .our-vision-list-item {
@@ -353,7 +383,6 @@ body {
 
 .crew-card {
   width: 270px;
-  height: 368px;
   margin: 15px;
   
   background-color: var(--primary-white-color);
@@ -372,6 +401,8 @@ body {
 .crew-tag {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  flex-direction: column;
 }
 
 .crew-name {
@@ -386,7 +417,7 @@ body {
 }
 
 .crew-job {
-  margin: 0;
+  margin: 0 0 16px 0;
 
   text-align: center;
   font-weight: 400;
@@ -394,6 +425,75 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.crew-buttons{
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+
+.crew-buttons .crew-link+.crew-link {
+  margin-left: 10px;
+}
+
+.crew-btn-icon {
+  margin: 0;
+  
+  width: 20px;
+  height: 20px;
+}
+
+.crew-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border: 0;
+  border-radius: 50%;
+  fill: rgba(175, 177, 184, 1);
+  background-position:center; 
+}
+
+.crew-button:hover,
+.crew-button:focus {
+  background-color:var(--accent-color) ;
+  fill: var(--primary-white-color);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  color: rgba(175, 177, 184, 1);
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-color);
+}
+
+.client+.client {
+  margin-left: 30px;
+}
+
+.client-icon {
+  fill: currentColor;
+  object-fit: contain;
+  width: 106px;
+  height: 60px;
 }
 
 .address-link {
@@ -422,4 +522,56 @@ body {
 
 .address-item + .address-item{
  margin-top: 9px;
+}
+
+.social {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+
+  color: var(--primary-white-color);
+}
+
+.social-links {
+  padding: 0;
+  margin: 0;
+}
+
+.social-link+.social-link {
+  margin-left: 10px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  border-radius: 50%;
+  fill: var(--primary-white-color);
+  background-position: center;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+.social-icon {
+    margin: 0;
+    
+    width: 20px;
+    height: 20px;
 }
