@@ -283,6 +283,9 @@ body {
 }
 
 .filter-button {
+  text-decoration: none;
+  
+  
   padding: 6px 22px;
   
   font-family: Roboto;
@@ -315,6 +318,10 @@ body {
   margin: -15px;
 }
 
+.project-link {
+  text-decoration: none;
+}
+
 .project-card {
   margin: 15px;
 
@@ -324,12 +331,20 @@ body {
   overflow: hidden;
 }
 
+.project-card:focus,
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-img {
   max-width: 100%;
   height: auto;
 }
 
 .project-tag {
+  text-decoration-style: none;
   padding: 20px 24px 20px 24px;
 
   border-left: 1px solid rgba(238, 238, 238, 1);
@@ -338,6 +353,7 @@ body {
 }
 
 .project-name {
+  color: var(--primary-text-color);
   margin: 0px 0px 4px 0px;
   
   font-style: normal;
