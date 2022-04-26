@@ -128,15 +128,11 @@ body {
 
 .mail-icon {
   fill: currentColor;
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 
 .phone-icon {
   fill: currentColor;
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
 }
 
@@ -256,9 +252,7 @@ body {
 }
 
 .vision-icon {
-  max-width: 70px;
-  max-height: 70px;
-  padding: 0;
+    padding: 0;
 }
 
 .our-vision-list-item {
@@ -464,18 +458,12 @@ body {
   margin-left: 10px;
 }
 
-.crew-btn-icon {
-  margin: 0;
-  
-  width: 20px;
-  height: 20px;
-}
 
 .crew-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 12px;
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
@@ -489,6 +477,12 @@ body {
 .crew-button:focus {
   background-color:var(--accent-color) ;
   fill: var(--primary-white-color);
+}
+
+.crew-btn-icon {
+  margin: 0;
+  padding: 0;
+  object-fit:contain;
 }
 
 .clients {
@@ -517,10 +511,9 @@ body {
 }
 
 .client-icon {
-  fill: currentColor;
-  object-fit: contain;
-  width: 106px;
-  height: 60px;
+  padding: 0;
+  margin: 0;
+  fill: currentColor;  
 }
 
 .address-link {
@@ -598,7 +591,5 @@ body {
 
 .social-icon {
     margin: 0;
-    
-    width: 20px;
-    height: 20px;
+    padding: 0;
 }
