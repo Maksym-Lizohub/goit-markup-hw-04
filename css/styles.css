@@ -240,12 +240,14 @@ body {
 }
 
 .vision-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px 25px 100px;
-  object-fit: contain;
   margin-bottom: 30px;
   background-color: var(--secondary-section-color);
+  border-radius: 4px;
 }
 
 .vision-icon {
@@ -519,6 +521,10 @@ body {
   color: var(--primary-white-color);
 }
 
+.main-footer .container.flex {
+  align-items: baseline;
+}
+
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -537,7 +543,6 @@ body {
 }
 
 .social {
-  align-items: baseline;
   margin-left: 70px;
 }
 
